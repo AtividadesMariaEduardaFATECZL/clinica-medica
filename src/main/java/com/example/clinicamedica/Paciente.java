@@ -23,6 +23,7 @@ public class Paciente {
     @Size(min = 3, max = 170)
     private String name;
     private String telefone;
+    @Column(name = "numero_beneficiario")
     private int numeroBeneficiario;
     @ManyToMany(fetch = FetchType.LAZY)
     private List<Medico> medicos = new ArrayList<>();
