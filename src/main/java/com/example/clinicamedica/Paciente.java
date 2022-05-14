@@ -27,4 +27,6 @@ public class Paciente {
     private int numeroBeneficiario;
     @ManyToMany(fetch = FetchType.LAZY)
     private List<Medico> medicos = new ArrayList<>();
+    @OneToMany
+    private List<Endereco> enederecos = new ArrayList<>();
 }
